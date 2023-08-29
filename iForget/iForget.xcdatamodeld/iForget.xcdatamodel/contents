@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="BankAccount" representedClassName="BankAccount" syncable="YES" codeGenerationType="class">
+        <attribute name="bankIBAN" optional="YES" attributeType="String"/>
+        <attribute name="bankMore" optional="YES" attributeType="String"/>
+        <attribute name="bankName" optional="YES" attributeType="String"/>
+        <attribute name="bankNo" optional="YES" attributeType="String"/>
+        <attribute name="bankSWIFT" optional="YES" attributeType="String"/>
+        <attribute name="bankType" optional="YES" attributeType="String"/>
+        <attribute name="fav" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Card" representedClassName="Card" syncable="YES" codeGenerationType="class">
+        <attribute name="cardBrand" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cardMore" optional="YES" attributeType="String"/>
+        <attribute name="cardName" optional="YES" attributeType="String"/>
+        <attribute name="cardNumber" optional="YES" attributeType="String"/>
+        <attribute name="cardPass" optional="YES" attributeType="String"/>
+        <attribute name="cardPin" optional="YES" attributeType="String"/>
+        <attribute name="cardValid" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="CardID" representedClassName="CardID" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="identityDateOfBirth" optional="YES" attributeType="String"/>
+        <attribute name="identityExistImage" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="identityFiliationFather" optional="YES" attributeType="String"/>
+        <attribute name="identityFiliationMother" optional="YES" attributeType="String"/>
+        <attribute name="identityHeight" optional="YES" attributeType="String"/>
+        <attribute name="identityImage" optional="YES" attributeType="Binary"/>
+        <attribute name="identityLastName" optional="YES" attributeType="String"/>
+        <attribute name="identityMore" optional="YES" attributeType="String"/>
+        <attribute name="identityName" optional="YES" attributeType="String"/>
+        <attribute name="identityNationality" optional="YES" attributeType="String"/>
+        <attribute name="identityNumber" optional="YES" attributeType="String"/>
+        <attribute name="identitySex" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="identityValid" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Drive" representedClassName="Drive" syncable="YES" codeGenerationType="class">
+        <attribute name="driveAddress" optional="YES" attributeType="String"/>
+        <attribute name="driveBirth" optional="YES" attributeType="String"/>
+        <attribute name="driveConditionsRestrictions" optional="YES" attributeType="String"/>
+        <attribute name="driveCountry" optional="YES" attributeType="String"/>
+        <attribute name="driveExpiry" optional="YES" attributeType="String"/>
+        <attribute name="driveFullName" optional="YES" attributeType="String"/>
+        <attribute name="driveHeight" optional="YES" attributeType="String"/>
+        <attribute name="driveLicenseClass" optional="YES" attributeType="String"/>
+        <attribute name="driveLicenseName" optional="YES" attributeType="String"/>
+        <attribute name="driveMore" optional="YES" attributeType="String"/>
+        <attribute name="driveNumber" optional="YES" attributeType="String"/>
+        <attribute name="driveSectionName" optional="YES" attributeType="String"/>
+        <attribute name="driveSex" optional="YES" attributeType="String"/>
+        <attribute name="driveState" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Insurance" representedClassName="Insurance" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="insuranceBirth" optional="YES" attributeType="String"/>
+        <attribute name="insuranceExpiry" optional="YES" attributeType="String"/>
+        <attribute name="insuranceGivenNames" optional="YES" attributeType="String"/>
+        <attribute name="insuranceIdentificationCard" optional="YES" attributeType="String"/>
+        <attribute name="insuranceIdentificationNumberInstitution" optional="YES" attributeType="String"/>
+        <attribute name="insuranceMore" optional="YES" attributeType="String"/>
+        <attribute name="insuranceName" optional="YES" attributeType="String"/>
+        <attribute name="insurancePersonalIdentificationNumber" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Login" representedClassName="Login" syncable="YES" codeGenerationType="class">
+        <attribute name="fav" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="loginPassword" optional="YES" attributeType="String"/>
+        <attribute name="loginSite" optional="YES" attributeType="String"/>
+        <attribute name="loginTitle" optional="YES" attributeType="String"/>
+        <attribute name="loginUsername" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Note" representedClassName="Note" syncable="YES" codeGenerationType="class">
+        <attribute name="dateChange" optional="YES" attributeType="String"/>
+        <attribute name="dateCreate" optional="YES" attributeType="String"/>
+        <attribute name="dateCreateHours" optional="YES" attributeType="String"/>
+        <attribute name="existImage" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="fav" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="imageThumb" optional="YES" attributeType="Binary"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <attribute name="reminder" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="textAlignment" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Passport" representedClassName="Passport" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="passportAuthority" optional="YES" attributeType="String"/>
+        <attribute name="passportBirth" optional="YES" attributeType="String"/>
+        <attribute name="passportDateExpiry" optional="YES" attributeType="String"/>
+        <attribute name="passportDateIssue" optional="YES" attributeType="String"/>
+        <attribute name="passportFiliationFather" optional="YES" attributeType="String"/>
+        <attribute name="passportFiliationMother" optional="YES" attributeType="String"/>
+        <attribute name="passportIssuingCountry" optional="YES" attributeType="String"/>
+        <attribute name="passportLastName" optional="YES" attributeType="String"/>
+        <attribute name="passportNacionality" optional="YES" attributeType="String"/>
+        <attribute name="passportName" optional="YES" attributeType="String"/>
+        <attribute name="passportNo" optional="YES" attributeType="String"/>
+        <attribute name="passportPlaceBirth" optional="YES" attributeType="String"/>
+        <attribute name="passportSex" optional="YES" attributeType="String"/>
+        <attribute name="passportType" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Password" representedClassName="Password" syncable="YES" codeGenerationType="class">
+        <attribute name="fav" optional="YES" attributeType="Boolean"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="passwordCode" optional="YES" attributeType="String"/>
+        <attribute name="passwordTitle" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Saving" representedClassName="Saving" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="descriptions" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="imageD" optional="YES" attributeType="Binary"/>
+        <attribute name="thumb" optional="YES" attributeType="Binary"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="BankAccount" positionX="-54" positionY="144" width="128" height="163"/>
+        <element name="Card" positionX="-54" positionY="-9" width="128" height="163"/>
+        <element name="CardID" positionX="-54" positionY="54" width="128" height="253"/>
+        <element name="Drive" positionX="-54" positionY="144" width="128" height="268"/>
+        <element name="Insurance" positionX="-54" positionY="144" width="128" height="178"/>
+        <element name="Login" positionX="-54" positionY="144" width="128" height="133"/>
+        <element name="Note" positionX="-54" positionY="144" width="128" height="223"/>
+        <element name="Passport" positionX="-54" positionY="90" width="128" height="268"/>
+        <element name="Password" positionX="-54" positionY="144" width="128" height="103"/>
+        <element name="Saving" positionX="-54" positionY="144" width="128" height="133"/>
+    </elements>
+</model>

@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  iForget
+
+  Created by Vinícius Lopes on 10/07/2020.
+  Copyright © 2020 Vinícius Lopes. All rights reserved.
+*/
+/*
+
+ "Home" = "Home";
+ "Vault" = "Vault";
+ "Passwords" = "Passwords";
+ "Bank Accounts" = "Bank Accounts";
+ "Cards" = "Cards";
+ "Create" = "Create";
+ "Password" = "Password";
+ "Login" = "Login";
+ "Bank Account" = "Bank Account";
+ "Credit Card" = "Credit Card";
+ "National ID" = "National ID";
+ "Insurance Card" = "Insurance Card";
+ "Drive Licence" = "Drive Licence";
+ "Passport" = "Passport";
+ "Membership Card" = "Membership Card";
+
+ */
+

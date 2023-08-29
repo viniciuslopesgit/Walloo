@@ -1,0 +1,210 @@
+/* 
+  Localizable.strings
+  iForget
+
+  Created by Vinícius Lopes on 10/07/2020.
+  Copyright © 2020 Vinícius Lopes. All rights reserved.
+*/
+//onboard one
+"All you need" = "一切你需要的";
+"One safe place" = "一个安全的地方";
+"Get Premium" = "获得奖励";
+"Get Start" = "开始吧";
+"Using iForget, you agree to" = "使用iForget，您同意";
+"Terms of Use" = "使用条款";
+"Privacy Policy" = "隐私政策";
+"CREATE PASSWORD" = "创建密码";
+"Create Password" = "创建密码";
+"Welcome" = "欢迎";
+"By using iForget you agree to its" = "通过使用“我忘记”，您同意";
+
+//
+//lock screen
+"Welcome Back" = "欢迎回来";
+"PASSWORD" = "密码";
+"Enter your password" = "输入密码";
+"Sign In" = "登入";
+"Use face ID" = "使用面部ID";
+"Please authenticate yourself." = "请验证您的身份。";
+"Cancel" = "取消";
+"Try Again" = "再试一次";
+"Enter Password" = "输入密码";
+"Incorrect password. Try again." = "密码错误。 再试一次。";
+"Success." = "成功。";
+//
+//nav bar
+"Home" = "家";
+"Create" = "创造";
+"Files" = "档案";
+"Account" = "帐户";
+//
+//home
+"Home" = "家";
+
+"Vault" = "金库";
+
+"Secure Notes" = "安全笔记";
+"Passwords" = "密码";
+"Logins" = "登录名";
+"Bank Accounts" = "银行账户";
+"Passports" = "护照";
+
+"Cards" = "牌";
+
+"Start adding your Identity!" = "开始添加您的身份！";
+"Tap here!" = "点击这里！";
+//
+//create
+"No secure notes found" = "什么都没找到";
+"Start by creating a note" = "从创建便笺开始";
+"Create secure note" = "创建安全笔记";
+
+"No passwords found" = "什么都没找到";
+"Start by creating a password" = "首先创建一个密码";
+"Create password" = "创建密码";
+
+"No logins found" = "什么都没找到";
+"Start by creating a login" = "从创建登录名开始";
+"Create login" = "建立登入";
+
+"No bank accounts found" = "什么都没找到";
+"Start by creating a bank account" = "首先创建一个银行帐户";
+"Create bank account" = "创建银行账户";
+
+"No passports found" = "什么都没找到";
+"Start by creating a passport" = "首先创建护照";
+"Create passport" = "创建护照";
+
+"Create" = "创造";
+
+"Secure Note" = "安全笔记";
+"Password" = "密码";
+"Login" = "登录";
+"Bank Account" = "银行账户";
+"Credit Card / Debit Card" = "信用卡/借记卡";
+"National ID" = "国民身份证";
+"Insurance Card" = "保险卡";
+"Driver's License" = "驾照";
+"Passport" = "护照";
+"Membership Card" = "会员卡";
+//
+//files
+"Search in iForget" = "在iForget中搜索";
+"Not now" = "现在不要";
+"Full Storage" = "完整存储";
+"Get more space" = "获得更多空间";
+"Upgrade for more space" = "升级以获得更多空间";
+"Not now" = "现在不要";
+//
+//account
+"My Account" = "我的帐户";
+"Security" = "安全";
+"Sync iCloud" = "同步";
+"Storage" = "存储";
+"Help and Support" = "帮助和支持";
+"About" = "关于";
+"Tell a friend" = "告诉一个朋友";
+"Upgrade" = "升级";
+"Rating us" = "给我们评分";
+"Restore" = "恢复";
+"Sign Out" = "登出";
+"Free" = "自由";
+"Premium" = "保费";
+//
+//secure
+"Use Touch ID" = "使用Touch ID";
+"Change Password" = "更改密码";
+"OLD PASSWORD" = "旧密码";
+"Old Password" = "旧密码";
+"NEW PASSWORD" = "新密码";
+"CONFIRM" = "确认";
+"Confirm" = "确认";
+"Change Password" = "更改密码";
+"Recommended" = "推荐的";
+//
+
+//secure notes
+"New Secure Note" = "新安全笔记";
+"Edit" = "编辑";
+"Edit Secure Note" = "编辑安全笔记";
+"Save" = "保存";
+//
+//login
+"New Login" = "新登录";
+//
+//passwords
+"TITLE" = "标题";
+"New Password" = "新密码";
+//
+//bank account
+"ACCOUNT NAME" = "用户名";
+"ACCOUNT Nº" = "帐户编号";
+"ADDITIONAL INFORMATION" = "附加信息";
+"ex: Card for" = "例如：";
+//
+//Passport
+"New Passport" = "新护照";
+"TYPE" = "类型";
+"ISSUING COUNTRY" = "发行国";
+"PASSPORT Nº" = "护照号。";
+"LAST NAME" = "姓";
+"NAME" = "名称";
+"BIRTH" = "出生";
+"GENDER" = "性别";
+"PLACE OF BIRTH" = "出生地";
+"FILIATION MOTHER" = "母亲孝顺";
+"FILIATION FATHER" = "父亲顺从";
+"DATE OF ISSUE" = "发行日期";
+"DATE OF EXPIRY" = "到期日期";
+"AUTHORITY" = "权威";
+"Authority" = "权威";
+//
+//national ID
+"NATIONALITY" = "国籍";
+"AFILIATION" = "联盟";
+"Mother" = "母亲";
+"Father" = "父亲";
+"HEIGHT" = "高度";
+"EXPIRY" = "到期";
+"Address" = "地址";
+//
+//seguro
+"New Insurance Card" = "新保险卡";
+"Last Name" = "姓";
+"PERSONAL IDENTIFICATION Nº" = "个人身份编号";
+"NUMBER OF INSTITUTION" = "机构数";
+"CARD Nº" = "卡号";
+"DATA OF EXPIRY" = "经验数据";
+//
+//driver's license
+"New Driver's License" = "新驾驶执照";
+"DRIVE LICENSE NAME" = "驾驶执照名称";
+"SECTION NAME" = "部分名称";
+"FULL NAME" = "全名";
+"ADDRESS" = "地址";
+"DATE OF BIRTH" = "出生日期";
+"Gender" = "性别";
+"NUMBER" = "数";
+"LICENSE CLASS" = "许可类别";
+"CONDITIONS/RESTRICTIONS" = "条件/限制";
+"STATE" = "州";
+"COUNTRY" = "国家";
+"EXPIRY DATE" = "到期日";
+"Additional Information" = "附加信息";
+//
+
+"Upload" = "上载";
+"Scan Document" = "扫描文件";
+"Use Camera" = "使用相机";
+"Done" = "完成了";
+"Rename File" = "重新命名文件";
+"Rename" = "改名";
+
+
+"The free version of iForget allows you to import, or create or scan 2 documents." = "免费版本的iForget允许您导入，创建或扫描2个文档。";
+"Premium features:" = "高级功能：";
+"Create unlimited files" = "创建无限的文件";
+"Completely Ad Free Experience" = "完全无广告的体验";
+
+"Monthly" = "每月一次";
+"Yearly" = "每年";

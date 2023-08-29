@@ -1,0 +1,207 @@
+/* 
+  Localizable.strings
+  iForget
+
+  Created by Vinícius Lopes on 10/07/2020.
+  Copyright © 2020 Vinícius Lopes. All rights reserved.
+*/
+//onboard one
+"All you need" = "Tudo o que você precisa";
+"One safe place" = "Em um lugar Seguro";
+"Get Premium" = "Obter Premium";
+"Get Start" = "Começar Usar";
+"Using iForget, you agree to" = "Usando iForget, você concorda com os";
+"Terms of use" = "Termos de Uso";
+"Privacy Policy" = "Política de Privacidade";
+"CREATE PASSWORD" = "CRIAR PALAVRA-PASSE";
+"Create Password" = "Palavra-passe";
+"Welcome" = "Bem-Vindo";
+"By using iForget you agree to its" = "Ao usar o iForget, você concorda com seu";
+//
+//lock screen
+"Welcome Back" = "Bem vindo novamente";
+"PASSWORD" = "PALAVRA-PASSE";
+"Enter your password" = "Introduza a sua palavra-passe";
+"Sign In" = "Iniciar sessão";
+"Use face ID" = "Usar face ID";
+"Please authenticate yourself." = "Por favor, autentique-se.";
+"Cancel" = "Cancelar";
+"Try Again" = "Tentar Novamente";
+"Enter Password" = "Digitar Palavra-passe";
+"Incorrect password. Try again." = "Palavra-passe incorreta. Tente novamente.";
+"Success." = "Sucesso.";
+//
+//nav bar
+"Home" = "Início";
+"Create" = "Criar";
+"Files" = "Arquivos";
+"Account" = "Conta";
+//
+//home
+"Home" = "Início";
+
+"Vault" = "Cofre";
+
+"Secure Notes" = "Notas Seguras";
+"Passwords" = "Senhas";
+"Logins" = "Logins";
+"Bank Accounts" = "Contas Bancárias";
+"Passports" = "Passaporte";
+
+"Cards" = "Meus Cartões";
+
+"Start adding your Identity!" = "Adicione seu Cartão de Identificação Pessoal";
+"Tap here!" = "Toque aqui!";
+//
+//create
+"No secure notes found" = "Nada encontrado";
+"Start by creating a note" = "Começe por criar uma nota segura";
+"Create secure note" = "Criar nota segura";
+
+"No passwords found" = "Nada encontrado";
+"Start by creating a password" = "Começe por criar uma palavra-passe";
+"Create password" = "Criar palavra-passe";
+
+"No logins found" = "Nada encontrado";
+"Start by creating a login" = "Começe por criar um login";
+"Create login" = "Criar login";
+
+"No bank accounts found" = "Nada encontrado";
+"Start by creating a bank account" = "Começe por criar uma conta bancária";
+"Create bank account" = "Criar conta bancária";
+
+"No passports found" = "Nada encontrado";
+"Start by creating a passport" = "Começe por criar um passaporte";
+"Create passport" = "Criar passaporte";
+
+"Create" = "Criar";
+
+"Secure Note" = "Nota segura";
+"Password" = "Senha";
+"Login" = "Login";
+"Bank Account" = "Conta Bancária";
+"Credit Card / Debit Card" = "Cartão de Crédito/Cartão de Débito";
+"National ID" = "Cartão de Identificação";
+"Insurance Card" = "Cartão de Seguro";
+"Driver's License" = "Carta de Condução";
+"Passport" = "Passaporte";
+"Membership Card" = "Cartão de Sócio";
+//
+//files
+"Search in iForget" = "Procurar no iForget";
+"Not now" = "Não agora";
+"Full Storage" = "Disco Cheio";
+"Get more space" = "Obter mais espaço";
+"Upgrade for more space" = "Atualize para mais espaço";
+"Not now" = "Não agora";
+"Not now" = "Não agora";
+//
+//account
+"My Account" = "Minha conta";
+"Security" = "Segurança";
+"Sync iCloud" = "Sync iCloud";
+"Storage" = "Armazenamento";
+"Help and Support" = "Ajuda e Suporte";
+"About" = "Sobre";
+"Tell a friend" = "Fale com um amigo";
+"Upgrade" = "Atualizar";
+"Rating us" = "Avalie-nos";
+"Restore" = "Restaurar";
+//
+//secure
+"Use Touch ID" = "Usar Touch ID";
+"Change Password" = "Mudar Palavra-passe";
+"OLD PASSWORD" = "PALAVRA-PASSE ANTIGA";
+"Old Password" = "Palavra-passe antiga";
+"NEW PASSWORD" = "NOVA PALAVRA-PASSE";
+"CONFIRM" = "CONFIRMAR";
+"Confirm" = "Confirmar";
+"Change Password" = "Mudar Palavra-passe";
+"Recommended" = "Recomendado";
+//
+
+//secure notes
+"New Secure Note" = "Nova Nota Segura";
+"Edit" = "Editar";
+"Edit Secure Note" = "Editar Nota Segura";
+"Save" = "Salvar";
+//
+//login
+"New Login" = "Novo Login";
+//
+//passwords
+"TITLE" = "TÍTULO";
+"New Password" = "Nova Palavra-Passe";
+//
+//bank account
+"ACCOUNT NAME" = "NOME";
+"ACCOUNT Nº" = "NÚMERO DA CONTA";
+"ADDITIONAL INFORMATION" = "INFORMAÇÃO ADICIONAL";
+"ex: Card for" = "ex: Conta para...";
+//
+//Passport
+"New Passport" = "Novo Passaporte";
+"TYPE" = "TIPO";
+"ISSUING COUNTRY" = "";
+"PASSPORT Nº" = "PASSAPORTE Nº";
+"LAST NAME" = "SOBRENOME";
+"NAME" = "NOME";
+"BIRTH" = "ANIVERSÁRIO";
+"GENDER" = "SEXO";
+"PLACE OF BIRTH" = "LOCAL DE NASCIMENTO";
+"FILIATION MOTHER" = "MÃE";
+"FILIATION FATHER" = "PAI";
+"DATE OF ISSUE" = "DATE DE EMISSÃO";
+"DATE OF EXPIRY" = "DATA DE VALIDADE";
+"AUTHORITY" = "AUTORIDADE";
+"Authority" = "Autoridade";
+//
+//national ID
+"NATIONALITY" = "NACIONALIDADE";
+"AFILIATION" = "FILIAÇÃO";
+"Mother" = "Mãe";
+"Father" = "Pai";
+"HEIGHT" = "ALTURA";
+"EXPIRY" = "EXPIRAÇÃO";
+"Address" = "Endereço";
+//
+//seguro
+"New Insurance Card" = "Novo Cartão de Seguro";
+"Last Name" = "Sobrenome";
+"PERSONAL IDENTIFICATION Nº" = "Nº INDENTIFICAÇÃO PESSOAL";
+"NUMBER OF INSTITUTION" = "Nº DA INSTITUIÇÃO";
+"CARD Nº" = "Nº CARTÃO";
+"DATA OF EXPIRY" = "DATA DE EXPIRAÇÃO";
+//
+//driver's license
+"New Driver's License" = "Nova Carta de Condução";
+"DRIVE LICENSE NAME" = "NOME DA LICENSA DE MOTORISTA";
+"SECTION NAME" = "NOME DA SEÇÃO";
+"FULL NAME" = "NOME COMPLETO";
+"ADDRESS" = "ENDEREÇO";
+"DATE OF BIRTH" = "DATA DE ANIVERSÁRIO";
+"Gender" = "Sexo";
+"NUMBER" = "NÚMERO";
+"LICENSE CLASS" = "TIPO DE LICENSA";
+"CONDITIONS/RESTRICTIONS" = "CONDIÇÕES/RESTRIÇÕES";
+"STATE" = "ESTADO";
+"COUNTRY" = "PAÍS";
+"EXPIRY DATE" = "DATA DE EXPIRAÇÃO";
+"Additional Information" = "Informação Adicional...";
+//
+
+
+"The free version of iForget allows you to import, or create or scan 2 documents." = "A versão gratuita do iForget permite importar, criar ou digitalizar 2 documentos.";
+"Premium features:" = "Recursos Premium:";
+"Create unlimited files" = "Crie arquivos ilimitados";
+"Completely Ad Free Experience" = "Sem propagandas";
+
+"Monthly" = "Mensal";
+"Yearly" = "Anual";
+
+"Upload" = "Importar";
+"Scan Document" = "Digitalizar Documento";
+"Use Camera" = "Usar Camera";
+"Done" = "Ok";
+"Rename File" = "Renomear Documento";
+"Rename" = "Renomear";

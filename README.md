@@ -3,6 +3,6 @@
 Your digital wallet.
 
 ## About
-iForget é uma aplicação desenvolvida com o intuito de forncener um local seguro para o armazenamento de documentos. 
+iForget is an application developed to provide a secure place to store documents. 
 
-O principal objeivo do iForget é proporcionar a você um espaço virtual no qual você pode armazenar seus documentos com total segurança. Através da integração com a iCloudKit, seus documentos são automaticamente salvos de forma criptografada, garatindo proteção de ponta a ponta.
+The main aim of iForget is to provide you with a virtual space in which you can store your documents in complete safety. Through integration with iCloudKit, your documents are automatically saved in encrypted form, ensuring end-to-end protection.

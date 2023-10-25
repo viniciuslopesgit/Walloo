@@ -5,12 +5,9 @@
 //  Created by Vinícius Lopes on 14/08/2020.
 //  Copyright © 2020 Vinícius Lopes. All rights reserved.
 //
-
 import SwiftUI
 
 struct CreditCard: View {
-    
-    
     @Environment(\.presentationMode) var presentation
     @Environment(\.managedObjectContext) var moc
     
@@ -93,7 +90,6 @@ struct CreditCard: View {
 }
 
 struct IdentityCard: View {
-    
     @Environment(\.presentationMode) var presentation
     @Environment(\.managedObjectContext) var moc
     

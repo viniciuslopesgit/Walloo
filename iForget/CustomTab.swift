@@ -5,19 +5,15 @@
 //  Created by Vinícius Lopes on 05/08/2020.
 //  Copyright © 2020 Vinícius Lopes. All rights reserved.
 //
-
 import SwiftUI
 import GoogleMobileAds
 
 struct NewCustomTab : View {
-    
     @Binding var showNotesView: Bool
     @Binding var showPasswordsView: Bool
     @Binding var showLoginsView: Bool
     @Binding var showBanksView: Bool
     @Binding var showFilesView: Bool
-    
-    
     @Binding var index : Int
     @Binding var showAdd: Bool
     @Binding var isUnlocked: Bool
@@ -30,14 +26,10 @@ struct NewCustomTab : View {
     @Environment(\.managedObjectContext) var moc
     
     @State var showAd = false
-    
     @State var timeRemaining = 99999999
     @State var rewardedAd: GADRewardedAd?
     
     var body: some View {
-        
-     
-        
         HStack{
             VStack(spacing: 0){
                 VStack{
@@ -61,7 +53,7 @@ struct NewCustomTab : View {
                 self.showFilesView = false
                 
             }
-            
+
             Spacer(minLength: 0)
             
             VStack(spacing: 0){
@@ -79,7 +71,6 @@ struct NewCustomTab : View {
                 self.index = 1
                 UserDefaults.standard.setValue(index, forKey: "index")
             }
-            
             VStack(spacing: 0){
                 VStack{
                     Image(systemName: "plus")
@@ -93,9 +84,9 @@ struct NewCustomTab : View {
                 self.showAdd.toggle()
                 self.showAd = true
             }
-            
+
             Spacer(minLength: 0)
-            
+    
             VStack(spacing: 0){
                 VStack{
                     Image(systemName: self.index == 2 ? "star.fill" : "star")
@@ -129,8 +120,6 @@ struct NewCustomTab : View {
                 self.index = 3
                 UserDefaults.standard.setValue(index, forKey: "index")
             }
-            
-            
         }
         .frame(height: 47)
         .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom == 0 ? 3 : UIApplication.shared.windows.first?.safeAreaInsets.bottom)
@@ -142,17 +131,13 @@ struct NewCustomTab : View {
                 self.showAdd = false
             }
         }
-        
     }
     /// Tells the delegate an ad request loaded an ad.
     func adViewDidReceiveAd(_ bannerView: GADBannerView) {
         print("adViewDidReceiveAd")
         self.showAd = true
     }
-    
     /// Tells the delegate an ad request failed.
-   
-    
     func rewardedAdDidPresent(_ rewardedAd: GADRewardedAd) {
         print("Rewarded ad presented.")
     }
@@ -161,9 +146,3 @@ struct NewCustomTab : View {
         print("Rewarded ad failed to present.")
     }
 }
-
-
-
-
-
-

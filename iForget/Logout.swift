@@ -5,7 +5,6 @@
 //  Created by Vinícius Lopes on 03/08/2020.
 //  Copyright © 2020 Vinícius Lopes. All rights reserved.
 //
-
 import SwiftUI
 
 struct Logout: View {

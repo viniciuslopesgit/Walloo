@@ -5,12 +5,10 @@
 //  Created by Vinícius Lopes on 12/09/2020.
 //  Copyright © 2020 Vinícius Lopes. All rights reserved.
 //
-
 import SwiftUI
 import CoreData
 
 struct FavouritesView: View {
-    
     @ObservedObject var userSettings = UserSettings()
     
     @Environment(\.managedObjectContext) var moc
@@ -36,7 +34,6 @@ struct FavouritesView_Previews: PreviewProvider {
 
 
 struct FavouritesAll : View {
-   
     @ObservedObject var userSettings = UserSettings()
     @Environment(\.presentationMode) var presentation
     @Environment(\.managedObjectContext) var moc
@@ -45,29 +42,24 @@ struct FavouritesAll : View {
         NSSortDescriptor(keyPath: \Note.fav, ascending: true)],
                   predicate: NSPredicate(format: "fav = true"))
     var note: FetchedResults<Note>
-    
     @FetchRequest(entity: Password.entity(), sortDescriptors:[
         NSSortDescriptor(keyPath: \Password.fav, ascending: true)],
                   predicate: NSPredicate(format: "fav = true"))
     var password: FetchedResults<Password>
-    
     @FetchRequest(entity: Login.entity(), sortDescriptors:[
         NSSortDescriptor(keyPath: \Login.fav, ascending: true)],
                   predicate: NSPredicate(format: "fav = true"))
     var login: FetchedResults<Login>
-    
     @FetchRequest(entity: BankAccount.entity(), sortDescriptors:[
         NSSortDescriptor(keyPath: \BankAccount.fav, ascending: true)],
                   predicate: NSPredicate(format: "fav = true"))
     var bankAccount: FetchedResults<BankAccount>
     
     @State var showCopy = false
-    
     @State var showModalText = false
     @State var showModalPassword = false
     @State var showModalLogin = false
     @State var showModalBank = false
-    
     @State var countNotesFav: Int = 0
     @State var countPasswordsFav: Int = 0
     @State var countLoginsFav: Int = 0
@@ -98,11 +90,7 @@ struct FavouritesAll : View {
                 if note.count + password.count + login.count + bankAccount.count != 0 {
                     
                 ScrollView(.vertical, showsIndicators: false){
-                    
-                    
-                    
                     //NOTES
-                    
                     if self.countNotesFav > 0 {
                         VStack(spacing: 0){
                             HStack{
@@ -117,7 +105,6 @@ struct FavouritesAll : View {
                         }
                         .frame(maxHeight: self.countNotesFav > 0 ? 50 : 0)
                         .padding(.top)
-                        
                     }
                     VStack(spacing: 1){
                         ForEach(note, id: \.self) {note in
@@ -127,9 +114,7 @@ struct FavouritesAll : View {
                                 }
                         }
                     }
-                    
                     //PASSWORDS
-                    
                     if self.countPasswordsFav > 0 {
                         VStack(spacing: 0){
                             HStack{
@@ -154,9 +139,7 @@ struct FavouritesAll : View {
                                 }
                         }
                     }
-                    
                     //LOGINS
-                    
                     if self.countLoginsFav > 0 {
                         VStack(spacing: 0){
                             HStack{
@@ -177,9 +160,7 @@ struct FavouritesAll : View {
                                 
                         }
                     }
-                    
                     //BANK ACCOUNTS
-                    
                     if self.countBanksFav > 0 {
                         VStack(spacing: 0){
                             HStack{
@@ -204,13 +185,7 @@ struct FavouritesAll : View {
                                 }
                         }
                     }
-                    
-                    //
-                    
-                    
-                    
                 }
-                    
                 } else {
                     VStack{
                         Spacer(minLength: 0)
@@ -236,17 +211,14 @@ struct FavouritesAll : View {
 
 struct VerifyFavoriteNotes: View {
     
-    @State var showCopy = false
-    
     @Binding var countNotesFav : Int
     @Binding var showModalText : Bool
     
+    @State var showCopy = false
     @State var activeSwipeLeft = false
     @State var activeAnimation = false
-    
     @State private var textRemoveReminder  = ""
     @State var showOptionsReminder = false
-    
     @State private var dateNotification = 0
     @State private var dateNotification1hour = Int(3600)
     @State private var dateNotificationTomorrow = Int(86400)
@@ -262,7 +234,6 @@ struct VerifyFavoriteNotes: View {
             ZStack{
                 HStack{
                     Spacer()
-                    
                     Image(systemName: self.note.fav ? "star.fill" : "star")
                         .foregroundColor(Color("Color5"))
                         .padding(.trailing, 20)
@@ -472,17 +443,15 @@ struct VerifyFavoriteNotes: View {
 struct VerifyFavoritePasswords: View {
     
     @Binding var showCopy: Bool
-    
     @Binding var countPasswordsFav : Int
     @Binding var showModalPassword : Bool
     
     @State var activeSwipeLeft = false
     @State var activeAnimation = false
+    @State private var showLink = false
     
     @Environment(\.presentationMode) var presentation
     @Environment(\.managedObjectContext) var moc
-    
-    @State private var showLink = false
     
     let password: Password
     

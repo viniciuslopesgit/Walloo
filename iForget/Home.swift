@@ -5,7 +5,6 @@
 //  Created by Vinícius Lopes on 14/08/2020.
 //  Copyright © 2020 Vinícius Lopes. All rights reserved.
 //
-
 import SwiftUI
 import CoreData
 import StoreKit
@@ -13,17 +12,20 @@ import UserNotifications
 import Combine
 
 struct Home: View {
-    
     @Binding var showNotesView: Bool
     @Binding var showPasswordsView: Bool
     @Binding var showLoginsView: Bool
     @Binding var showBanksView: Bool
     @Binding var showFilesView: Bool
-    
+
+    @State private var showingAddScreen = false
+    @State private var showingNotifications = false
+    @State var goSecondOnboard = false
+    @State var showNews = false
+    @State var index = 0
+
     @ObservedObject var userSettings = UserSettings()
     @ObservedObject var audioRecorder: AudioRecorder
-    
-    @State var index = 0
     
     @Environment(\.presentationMode) var presentation
     @Environment(\.managedObjectContext) var moc
@@ -31,29 +33,18 @@ struct Home: View {
     @FetchRequest(entity: Card.entity(), sortDescriptors: [
                     NSSortDescriptor(keyPath: \Card.cardNumber, ascending: true),])
     var cards: FetchedResults<Card>
-    
     @FetchRequest(entity: CardID.entity(), sortDescriptors:[
                     NSSortDescriptor(keyPath: \CardID.identityName, ascending: true)])
     var cardsID: FetchedResults<CardID>
-    
     @FetchRequest(entity: Insurance.entity(), sortDescriptors:[
                     NSSortDescriptor(keyPath: \Insurance.insuranceGivenNames, ascending: true)])
     var insurance: FetchedResults<Insurance>
-    
     @FetchRequest(entity: Drive.entity(), sortDescriptors:[
                     NSSortDescriptor(keyPath: \Drive.driveFullName, ascending: true)])
     var driveCard: FetchedResults<Drive>
-    
     @FetchRequest(entity: Passport.entity(), sortDescriptors:[
                     NSSortDescriptor(keyPath: \Passport.passportName, ascending: true)])
     var passport: FetchedResults<Passport>
-    
-    
-    @State private var showingAddScreen = false
-    @State private var showingNotifications = false
-    
-    @State var goSecondOnboard = false
-    @State var showNews = false
     
     var body: some View{
         NavigationView{
@@ -88,7 +79,6 @@ struct Home: View {
                             }
                             .offset(y: 50)
                         }
-                        // END BANK CARDS
                         
                         // CARDS ID
                         ForEach(cardsID, id: \.self) {cardID in
@@ -97,7 +87,6 @@ struct Home: View {
                             }
                             .padding(.top, 70)
                         }
-                        // END CARD ID
                         
                         // INSURANCE CARD
                         ForEach(insurance, id: \.self) {insurance in
@@ -106,7 +95,6 @@ struct Home: View {
                             }
                             .padding(.top, 70)
                         }
-                        // END INSURANCE CARD
                         
                         // DRIVE LICENSE
                         ForEach(driveCard, id: \.self) {driveCard in
@@ -115,7 +103,6 @@ struct Home: View {
                             }
                             .padding(.top, 70)
                         }
-                        // END DRIVE LICENSE
                         
                         // DRIVE LICENSE
                         ForEach(passport, id: \.self) {passport in
@@ -124,45 +111,18 @@ struct Home: View {
                             }
                             .padding(.top, 70)
                         }
-                        // END DRIVE LICENSE
-                        
                     }
                     .padding(.bottom, self.passport.count > 0 ? 400 : 200)
                     .offset(y: -70)
                     .onAppear {
-                        //rating
+                        //RATING
                         if UserDefaults.standard.bool(forKey: "rate") == false {
                             SKStoreReviewController.requestReview()
                             UserDefaults.standard.setValue(true, forKey: "rate")
                         }
-                        //end rating
                     }
-                    
                 }
                 .navigationBarTitle(Text("All Items"), displayMode: .inline)
-                /*
-                .navigationBarItems(trailing:
-                                        HStack{
-                                            if userSettings.proBuy == false {
-                                                NavigationLink(destination: OnboardingOne(goSecondOnboard: $goSecondOnboard, showNews: $showNews)){
-                                                    ZStack{
-                                                        Capsule()
-                                                            .foregroundColor(Color.white)
-                                                        Capsule()
-                                                            .stroke(Color(#colorLiteral(red: 0.02676662794, green: 0.2080936173, blue: 0.8072781736, alpha: 1)), lineWidth: 2)
-                                                        Text("Upgrade")
-                                                            .foregroundColor(Color(#colorLiteral(red: 0.01933043593, green: 0.1502819237, blue: 0.5830035463, alpha: 1)))
-                                                            .font(.system(size: 12, weight: .bold))
-                                                            .padding(.horizontal)
-                                                            .padding(.vertical, 5)
-                                                        
-                                                    }
-                                                }
-                                                
-                                            }
-                                        }
-                )
-                */
             }
             .onAppear{
                 UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in

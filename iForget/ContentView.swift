@@ -23,7 +23,6 @@ extension Image {
 }
 
 struct ContentView: View {
-    
     @Environment(\.presentationMode) var presentation
     @Environment(\.managedObjectContext) var moc
     
@@ -170,16 +169,13 @@ struct ContentView: View {
                                             self.showError = true
                                         }
                                     }
-                                    
                                 }
                             
                             Spacer()
                         }
                     }
                 }
-                
             } else if userSettings.isFirst == false {
-                
                 VStack(spacing: 0){
                     
                     if self.isUnlocked == true {
@@ -200,7 +196,6 @@ struct ContentView: View {
                         }
                         NewCustomTab(showNotesView: $showNotesView,showPasswordsView: $showPasswordsView, showLoginsView:$showLoginsView,showBanksView: $showBanksView, showFilesView: $showFilesView, index: self.$index, showAdd: self.$showAdd, isUnlocked: self.$isUnlocked, password: self.$password, audioRecorder: audioRecorder)
                             .frame(height: 47)
-                        
                     } else {
                         ZStack{
                             Color("Color1")

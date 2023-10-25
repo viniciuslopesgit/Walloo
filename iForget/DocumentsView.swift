@@ -4,8 +4,7 @@
 //
 //  Created by Vinícius Lopes on 14/07/2020.
 //  Copyright © 2020 Vinícius Lopes. All rights reserved.
-//
-
+/
 import SwiftUI
 import CoreData
 import Combine
@@ -30,9 +29,7 @@ struct DocumentsView: View {
     @State var show = false
     @State var showBuyPro = false
     @State var showScan = false
-    
     @State var sourceType: UIImagePickerController.SourceType = .camera
-    
     @State private var showGrid = false
     @State var activeSheet: ActiveSheet = .thirt
     
@@ -80,17 +77,6 @@ struct DocumentsView: View {
                 FilesView(showGrid: self.$showGrid, showOptions: self.$showOptions)
             }
             
-                
-            /*
-             if UserDefaults.standard.bool(forKey: "proBuy") == false {
-             VStack{
-             Spacer()
-             AdView()
-             .frame(height: 60, alignment: .center)
-             }
-             }
-             */
-        
     }.navigationBarTitle("", displayMode: .inline)
         .navigationBarItems(
             trailing:
@@ -202,4 +188,3 @@ struct FilesView : View {
         try? moc.save()
     }
 }
-

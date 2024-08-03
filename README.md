@@ -11,3 +11,7 @@ The main aim of Walloo is to provide you with a virtual space in which you can s
 ![f1c00a157589353 637c1d66b82de](https://github.com/user-attachments/assets/ee23b54d-3cb1-448a-b917-fd29408b24d3)
 ![6b336d157589353 637c1d66b704b](https://github.com/user-attachments/assets/c8da3894-c3f4-477c-bd09-cf67f1a4ec6b)
 ![b24a33157589353 637c1d66b947a](https://github.com/user-attachments/assets/fbfa4276-6950-4775-b0b6-ef841a0b747a)
+
+## Contributions
+
+Contributions are welcome! Please fork the repository and send a pull request with your improvements or fixes.
